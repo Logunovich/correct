@@ -79,7 +79,8 @@ function correctTextFun(num = 1) {
     .replace(/9 °/gim, '9°')
     .replace(/Onliner/gim, 'Onlíner');
 
-
+    console.log('NEbelmova')
+    correctTextField.value = correctText;
 
     // условие для кнопки бел. языка (остальные replace подставятся автоматически)
     if (num == 0) {
@@ -146,9 +147,11 @@ function correctTextFun(num = 1) {
         .replace(/Я У/gm, 'Я Ў');
 
         belCorrectText = belCorrectText.replace(/и/gm, 'i').replace(/И/gm, 'I');
+
         correctTextField.value = belCorrectText;
+        console.log('belmova')
     }
-    correctTextField.value = correctText;
+
 
 };
 
