@@ -79,7 +79,6 @@ function correctTextFun(num = 1) {
     .replace(/9 °/gim, '9°')
     .replace(/Onliner/gim, 'Onlíner');
 
-    console.log('NEbelmova')
     correctTextField.value = correctText;
 
     // условие для кнопки бел. языка (остальные replace подставятся автоматически)
@@ -149,7 +148,6 @@ function correctTextFun(num = 1) {
         belCorrectText = belCorrectText.replace(/и/gm, 'i').replace(/И/gm, 'I');
 
         correctTextField.value = belCorrectText;
-        console.log('belmova')
     }
 
 
@@ -161,7 +159,9 @@ btn.addEventListener('click', (e) => {
     correctTextField.value = '5 сек!';
 
     if (inputMova.checked === true) {
+        setTimeout(() => {
         correctTextFun(0);
+    }, 1000);
     } else {
         setTimeout(() => {
             correctTextFun();
