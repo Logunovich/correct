@@ -78,7 +78,8 @@ function correctTextFun(num = 1) {
     .replace(/7 °/gim, '7°')
     .replace(/8 °/gim, '8°')
     .replace(/9 °/gim, '9°')
-    .replace(/Onliner/gim, 'Onlíner');
+    .replace(/Onliner/gim, 'Onlíner')
+    .replace(/Логунович/gim, 'Супер-крутой человек');
 
     correctTextField.value = correctText;
 
@@ -162,7 +163,7 @@ btn.addEventListener('click', (e) => {
     if (inputMova.checked === true) {
         setTimeout(() => {
         correctTextFun(0);
-    }, 1000);
+    }, 200);
     } else {
         setTimeout(() => {
             correctTextFun();
