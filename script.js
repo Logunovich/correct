@@ -32,6 +32,7 @@ function correctTextFun(num = 1) {
     .replace(/мвтч/gim, 'МВт·ч')
     .replace(/Нм/gm, 'Н·м')
     .replace(/кВтч/gim, 'кВт·ч')
+    .replace(/мАч/gm, 'мА·ч')
     .replace(/  /gim, ' ') // двойной пробел
     .replace(/4х4/gim, '4×4')
     .replace(/4x4/gim, '4×4')
@@ -165,7 +166,7 @@ btn.addEventListener('click', (e) => {
     } else {
         setTimeout(() => {
             correctTextFun();
-        }, 1000);
+        }, 200);
 
 
          // вызывать функцию без аргумента! 

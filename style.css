@@ -70,3 +70,15 @@ body {
 .final__text{
     background: red;
 }
+
+@media (max-width: 600px) {
+    .form {
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0 4px 16px #ccc;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+    }
+
+}
