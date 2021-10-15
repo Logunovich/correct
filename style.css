@@ -30,6 +30,20 @@ body {
     margin: 0 0 14px 0;
 } 
 
+
+.form__button{
+    background: rgb(172, 172, 172);
+    border: 1px solid rgb(141, 141, 141);
+    font-size: 20px;
+    border-radius: 7px;
+    color: #fff;
+    padding:5px;
+    cursor: pointer;
+}
+.form__button:hover{
+    background: rgb(151, 151, 151);
+}
+
 .form__title {
     text-align: center;
     margin: 0 0 32px 0;
@@ -70,6 +84,39 @@ body {
 .final__text{
     background: red;
 }
+
+.btn-block{
+    display: flex;
+    justify-content:space-between;
+}
+.sec-btn-block{
+    display: flex;
+    
+}
+
+.sec-btn{
+    margin: 0 0 0 10px;
+    height: 30px;
+    background: rgb(172, 172, 172);
+    border: 1px solid rgb(141, 141, 141);
+    font-size: 12px;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    /* padding:5px; */
+}
+.sec-btn:hover{
+    background: rgb(151, 151, 151);
+}
+
+.form__group textarea{
+    padding: 5px;
+}
+
+#final__text{
+    padding: 5px;
+}
+
 
 @media (max-width: 600px) {
     .form {
