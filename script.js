@@ -20,6 +20,8 @@ function correctTextFun(num = 1) {
     .replace(/,-/gim, ',—') // простой дефис
     .replace(/--/gim, '—') // двойной дефис
     .replace(/",/gim, '»,')
+    .replace(/“/gim, '«')
+    .replace(/”/gim, '»')
     .replace(/" /gim, '» ')
     .replace(/":/gim, '»:')
     .replace(/";/gim, '»;')
